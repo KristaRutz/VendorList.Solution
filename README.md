@@ -6,8 +6,11 @@
 
 ## Description
 
-This application lets the user... and does...
-It might even be hosted on hosted on [GitHub](https://github.com/KristaRutz/VendorList.Solution). It does so using this and this technology or concept.
+This application, utilizing an MVC framework, lets the user... and does... It does so using C# and .NET Core.
+
+This project uses RESTful routing, the Razor View Engine, and MSTest. It was created for the Epicodus week 10 friday independent project, on week 3 of C# and .NET course: Basic Web Applications.
+
+The source code is hosted on [GitHub](https://github.com/KristaRutz/VendorList.Solution).
 
 ## Installation / Set-up
 
@@ -30,19 +33,10 @@ Download or clone the repository to run this program locally! _This program requ
 
 - C#
 - .NET Core 2.2
+- HTML with Razor
+- CSS: Custom and Bootstrap
 
-## Specs
-
-<details>
-  <summary>Expand specs for this project</summary>
-
-| Spec | Example Input | Expected Output |
-| :--- | :------------ | :-------------- |
-
-
-</details>
-<details>
-  <summary>Expand user stories for this project</summary>
+## User Stories
 
 | As a _User-Type_,                                   | I want...                                                                                          | so that...                                                                                           |
 | :-------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
@@ -55,8 +49,6 @@ Download or clone the repository to run this program locally! _This program requ
 | As Pierre,                                          | I want to be able to delete orders or vendors                                                      | in case of cancellations                                                                             |
 | As Pierre,                                          | I want to be able to edit orders or vendors                                                        | in case of changes, or user error                                                                    |
 | As Pierre's tax consultant                          | I want Pierre to be able to note if and when orders were filled and if and when they were paid for | so that he doesn't have to give me paper receipts or search through old emails when tax season comes |
-
-</details>
 
 ## Known Bugs
 
