@@ -44,6 +44,14 @@ namespace VendorTracker.Tests
     }
 
     [TestMethod]
+    public void GetNotes_ReturnsNotes_String()
+    {
+      string notes = "test notes";
+      Order newOrder = new Order(1, 1, notes);
+      Assert.AreEqual(notes, newOrder.Notes);
+    }
+
+    [TestMethod]
     public void GetAll_ReturnsEmptyList_OrderList()
     {
       List<Order> newList = new List<Order> { };
