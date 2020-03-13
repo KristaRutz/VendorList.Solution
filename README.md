@@ -44,9 +44,17 @@ Download or clone the repository to run this program locally! _This program requ
 <details>
   <summary>Expand user stories for this project</summary>
 
-| As a _User-Type_, | I want... | so that... |
-| :---------------- | :-------- | :--------- |
-
+| As a _User-Type_,                                   | I want...                                                                                          | so that...                                                                                           |
+| :-------------------------------------------------- | :------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------- |
+| As Pierre, owner and head baker of Pierre's Bakery, | I want to track the vendors that purchase baked goods                                              | so that I have all of the vendor information contained in one place                                  |
+| As Pierre                                           | I want vendors that I add to be stored                                                             | so that I can access them as often as I need                                                         |
+| As Pierre,                                          | I want to be able to customize a vendor's name, description, and orders                            | so that I can have flexibility on future accounts                                                    |
+| As Pierre,                                          | I want to see the orders belonging to those vendors                                                | to simplify billing on each account                                                                  |
+| As Pierre,                                          | I want title, description, price, and date for orders                                              | so that my tracker is useful for filling orders and accounting                                       |
+| As Pierre,                                          | I want a splash page!                                                                              | so that I am cheered up before doing boring paperwork                                                |
+| As Pierre,                                          | I want to be able to delete orders or vendors                                                      | in case of cancellations                                                                             |
+| As Pierre,                                          | I want to be able to edit orders or vendors                                                        | in case of changes, or user error                                                                    |
+| As Pierre's tax consultant                          | I want Pierre to be able to note if and when orders were filled and if and when they were paid for | so that he doesn't have to give me paper receipts or search through old emails when tax season comes |
 
 </details>
 
