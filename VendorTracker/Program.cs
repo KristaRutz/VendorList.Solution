@@ -1,6 +1,6 @@
 using System;
 
-namespace Project
+namespace VendorTracker
 {
   public class Program
   {
