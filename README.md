@@ -1,13 +1,13 @@
-# Project Name (C# Console Application)
+# Vendor Tracker (C# Web Application)
 
-#### A console-based application to simulate ... where the user can ... hosted on [GitHub](https://github.com/KristaRutz/). _Last Updated 03.03.2020._
+#### A web-based application to organize vendors and orders, where the user can input new vendors and create orders under the vendors, hosted on [GitHub](https://github.com/KristaRutz/VendorList.Solution). _Last Updated 03.13.2020._
 
-#### By _**Krista Rutz, [other contributors]**_
+#### By _**Krista Rutz**_
 
 ## Description
 
 This application lets the user... and does...
-It might even be hosted on hosted on [GitHub](https://github.com/KristaRutz/). It does so using this and this technology or concept.
+It might even be hosted on hosted on [GitHub](https://github.com/KristaRutz/VendorList.Solution). It does so using this and this technology or concept.
 
 ## Installation / Set-up
 
@@ -15,13 +15,13 @@ Download or clone the repository to run this program locally! _This program requ
 
 - Download or clone this repo.
   - **To Download ZIP:**
-    - Select "Download" on the [GitHub Repository](https://github.com/KristaRutz/) site
-    - Once downloaded, open the ZIP and extract files. The new folder will be created as 'ProjectName.Solution'.
+    - Select "Download" on the [GitHub Repository](https://github.com/KristaRutz/VendorList.Solution) site
+    - Once downloaded, open the ZIP and extract files. The new folder will be created as 'VendorList.Solution'.
   - **To Clone:**
-    - Clone from command line into your Desktop: `$ git clone https://github.com/KristaRutz/...`
-    - The new directory will be created as 'Desktop/ProjectName.Solution'.
+    - Clone from command line into your Desktop: `$ git clone https://github.com/KristaRutz/VendorList.Solution`
+    - The new directory will be created as 'Desktop/VendorList.Solution'.
 - Once you have stored the files locally, execute the following commands.
-  - Navigate to the application directory: `$ cd ProjectName.Solution/ProjectName`
+  - Navigate to the application directory: `$ cd VendorList.Solution/VendorList`
   - `dotnet build`
   - `dotnet run`
 - Upon success, the program will begin running in your console.
@@ -56,11 +56,11 @@ Download or clone the repository to run this program locally! _This program requ
 
 ## Support and contact details
 
-Please contact me if you run into any issues or have questions, ideas or concerns. Krista can be contacted at <krista.rutz@pomona.edu>. Feel free to create a pull request for updates - _contributions to the code are encouraged!_
+Please contact me if you run into any issues or have questions, ideas or concerns. I can be contacted at <krista.rutz@pomona.edu>. Feel free to create a pull request for updates - _contributions to the code are encouraged!_
 
 ### License
 
-Copyright (c) 2020 **_Krista Rutz, [Others]_**
+Copyright (c) 2020 **_Krista Rutz_**
 
 _This software is licensed under the MIT license._
 
