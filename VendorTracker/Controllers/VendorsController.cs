@@ -18,5 +18,11 @@ namespace VendorTracker.Controllers
     {
       return View();
     }
+
+    [HttpGet("/vendors/0")]
+    public ActionResult Show()
+    {
+      return View();
+    }
   }
 }
