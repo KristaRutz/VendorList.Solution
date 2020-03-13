@@ -45,6 +45,11 @@ namespace VendorTracker.Models
       Description = $"Bread: {Bread}, Pastries: {Pastries}";
     }
 
+    public int GetPrice()
+    {
+      return (Bread * 5) + (Pastries * 2);
+    }
+
     public static List<Order> GetAll()
     {
       return _instances;
