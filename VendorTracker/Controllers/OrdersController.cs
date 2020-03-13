@@ -7,19 +7,19 @@ namespace VendorTracker.Controllers
 {
   public class OrdersController : Controller
   {
-    [HttpGet("/vendors/0/items")]
+    [HttpGet("/vendors/{vendorId}/orders")]
     public ActionResult Index()
     {
       return RedirectToAction("Show", "Vendors");
     }
 
-    [HttpGet("/vendors/0/items/new")]
-    public ActionResult New()
+    [HttpGet("/vendors/{vendorId}/orders/new")]
+    public ActionResult New(int vendorId)
     {
-      return View();
+      return View(Vendor.Find(vendorId));
     }
 
-    [HttpGet("/vendors/0/items/0")]
+    [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
     public ActionResult Show()
     {
       return View();

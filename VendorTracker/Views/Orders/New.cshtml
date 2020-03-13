@@ -3,3 +3,13 @@
 <p>test it out</p>
 
 <p>Here's a form, that should POST submit back to <a href="/vendors/0">specific vendor</a></p>
+
+<form action="/vendors/@Model.Id/orders" method="post">
+  <label for="orderBread">How much bread?</label>
+  <input id="orderBread" name="orderBread" type="number">
+  <label for="orderPastries">How many pastries?</label>
+  <input id="orderPastries" name="orderPastries" type="number">
+  <label for="orderNotes">Notes:</label>
+  <input id="orderNotes" name="orderNotes" placeholder="none" type="text">
+  <button type="submit">Add new order</button>
+</form>
