@@ -38,5 +38,12 @@ namespace VendorTracker.Controllers
       Order.ClearAll();
       return RedirectToAction("Index");
     }
+
+    [HttpPost("/orders/{orderId}/delete")]
+    public ActionResult Delete(int orderId)
+    {
+      Order.ClearAll();
+      return RedirectToAction("Index");
+    }
   }
 }

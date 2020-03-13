@@ -9,6 +9,7 @@ namespace VendorTracker.Models
 
     public string Notes { get; set; }
     public int Id { get; }
+    public static int RunningCount { get; set; } = 0;
     public int Bread { get; set; }
     public int Pastries { get; set; }
     public DateTime DateOrdered { get; }
@@ -23,7 +24,8 @@ namespace VendorTracker.Models
       Pastries = pastries;
       Notes = "none";
       _instances.Add(this);
-      Id = _instances.Count;
+      RunningCount++;
+      Id = RunningCount;
       DateOrdered = DateTime.Now;
       DateModified = DateOrdered;
       DateDue = DateModified.AddDays(2);
@@ -37,7 +39,8 @@ namespace VendorTracker.Models
       Pastries = pastries;
       Notes = notes;
       _instances.Add(this);
-      Id = _instances.Count;
+      RunningCount++;
+      Id = RunningCount;
       DateOrdered = DateTime.Now;
       DateModified = DateOrdered;
       DateDue = DateModified.AddDays(2);
@@ -58,6 +61,7 @@ namespace VendorTracker.Models
     public static void ClearAll()
     {
       _instances.Clear();
+      RunningCount = 0;
     }
 
     public static Order Find(int searchId)
