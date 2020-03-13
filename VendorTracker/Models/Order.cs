@@ -6,6 +6,8 @@ namespace VendorTracker.Models
   public class Order
   {
     public string Description { get; set; }
+
+    public string Notes { get; set; }
     public int Id { get; }
     public int Bread { get; set; }
     public int Pastries { get; set; }
@@ -19,6 +21,21 @@ namespace VendorTracker.Models
     {
       Bread = bread;
       Pastries = pastries;
+      Notes = "none";
+      _instances.Add(this);
+      Id = _instances.Count;
+      DateOrdered = DateTime.Now;
+      DateModified = DateOrdered;
+      DateDue = DateModified.AddDays(2);
+      Title = $"Order No. {Id}, {DateModified.ToString()}";
+      Description = $"Bread: {Bread}, Pastries: {Pastries}";
+    }
+
+    public Order(int bread, int pastries, string notes)
+    {
+      Bread = bread;
+      Pastries = pastries;
+      Notes = notes;
       _instances.Add(this);
       Id = _instances.Count;
       DateOrdered = DateTime.Now;
