@@ -7,5 +7,5 @@
 <p>Order Total: @Model["order"].GetPrice()</p>
 <p>Details</p>
 
-@* <p>Here's a static link to <a href="/vendors/0/items/0/???">edit/delete this order</a></p> *@
+<p>Here's a static link to <a href='/vendors/@Model["vendor"].Id/orders/@Model["order"].Id/delete'>delete this order</a></p>
 <p>Here's a static link back to <a href='/vendors/@Model["vendor"].Id/'>orders list for this vendor</a></p>
