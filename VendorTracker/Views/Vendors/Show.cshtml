@@ -1,12 +1,14 @@
-<h1>This is the Vendor's Unique Id Number, followed by the Vendor's Name</h1>
+@using VendorTracker.Models;
 
-<ul>
-  <li>Here's a list</li>
-  <li>Of all of the orders</li>
-  <li>Of your vendor</li>
-  <li>like so.</li>
-  <li><a href="/vendors/0/items/0">A detail page for an order</a></li>
-</ul>
+<h1>Vendor #@Model.Id: @Model.Name</h1>
 
-<p>Here's a static link to <a href="/vendors/0/items/new">add more orders to THIS VENDOR</a></p>
+<ol>
+  <li><a href="/vendors/@Model.Id/items/0">A detail page for an order</a></li>
+@foreach (Order order in @Model.Orders)
+{
+  <li><a href='/vendors/@Model.Id/orders/@order.Id'>@order.Title</a></li>
+}
+</ol>
+
+<p>Here's a static link to <a href="/vendors/@Model.Id/orders/new">add more orders to THIS VENDOR</a></p>
 <p>Here's a static link back to <a href="/vendors">vendors list</a></p>

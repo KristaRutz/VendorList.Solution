@@ -1,11 +1,19 @@
-<h1>Here be vendors</h1>
+@using VendorTracker.Models;
+
+<h1>My Vendors</h1>
+
+@if (@Model.Count == 0)
+{
+  <h3>Vendors list is empty</h3>
+} 
 
 <ul>
-  <li>Here's a list</li>
-  <li>Of all of the vendors</li>
-  <li>Of your vendor</li>
-  <li>like so.</li>
-  <li><a href="/vendors/0">And I am a clickable example Vendor</a></li>
+  <li><a href="/vendors/0">I am a clickable Example Vendor</a></li>
+@foreach (Vendor vendor in Model)
+{
+  <li><a href='/vendors/@vendor.Id'>@vendor.Name</a></li>
+}
 </ul>
+
 
 <a href="/vendors/new">Add-A-Vendor</a>

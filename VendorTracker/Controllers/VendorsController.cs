@@ -10,7 +10,7 @@ namespace VendorTracker.Controllers
     [HttpGet("/vendors")]
     public ActionResult Index()
     {
-      return View();
+      return View(Vendor.GetAll());
     }
 
     [HttpGet("/vendors/new")]
@@ -19,10 +19,18 @@ namespace VendorTracker.Controllers
       return View();
     }
 
-    [HttpGet("/vendors/0")]
-    public ActionResult Show()
+    [HttpPost("/vendors")]
+    public ActionResult Create(string vendorName, string vendorDescription)
     {
-      return View();
+      Vendor newVendor = new Vendor(vendorName, vendorDescription);
+      return RedirectToAction("Index");
+    }
+
+    [HttpGet("/vendors/{id}")]
+    public ActionResult Show(int id)
+    {
+      //Vendor currentVendor = 
+      return View(Vendor.Find(id));
     }
 
   }
