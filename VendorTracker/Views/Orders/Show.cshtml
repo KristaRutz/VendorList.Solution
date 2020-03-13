@@ -1,8 +1,11 @@
-<h1>This is the Order's Unique Id Number</h1>
+<h1>Order #@Model["order"].Id.</h1>
 
-<p>Details</p>
-<p>Details</p>
+<p>@Model["order"].Description</p>
+<p>Last updated: @Model["order"].DateModified</p>
+<p>Fill this order by: @Model["order"].DateDue</p>
+<p>Notes: @Model["order"].Notes</p>
+<p>Order Total: @Model["order"].GetPrice()</p>
 <p>Details</p>
 
 @* <p>Here's a static link to <a href="/vendors/0/items/0/???">edit/delete this order</a></p> *@
-<p>Here's a static link back to <a href="/vendors/0">orders list for this vendor</a></p>
+<p>Here's a static link back to <a href='/vendors/@Model["vendor"].Id/'>orders list for this vendor</a></p>

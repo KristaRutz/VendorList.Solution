@@ -20,9 +20,23 @@ namespace VendorTracker.Controllers
     }
 
     [HttpGet("/vendors/{vendorId}/orders/{orderId}")]
-    public ActionResult Show()
+    public ActionResult Show(int vendorId, int orderId)
     {
-      return View();
+      Vendor currentVendor = Vendor.Find(vendorId);
+      Order currentOrder = Order.Find(orderId);
+      Dictionary<string, object> model = new Dictionary<string, object>
+      {
+        {"vendor", currentVendor},
+        {"order", currentOrder}
+      };
+      return View(model);
+    }
+
+    [HttpPost("/orders/delete")]
+    public ActionResult DeleteAll()
+    {
+      Order.ClearAll();
+      return RedirectToAction("Index");
     }
   }
 }
