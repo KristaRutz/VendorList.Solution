@@ -29,7 +29,6 @@ namespace VendorTracker.Controllers
     [HttpGet("/vendors/{id}")]
     public ActionResult Show(int id)
     {
-      //Vendor currentVendor = 
       return View(Vendor.Find(id));
     }
 

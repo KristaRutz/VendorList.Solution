@@ -10,7 +10,7 @@ namespace VendorTracker.Controllers
     [HttpGet("/vendors/{vendorId}/orders")]
     public ActionResult Index()
     {
-      return RedirectToAction("Show", "Vendors");
+      return View(Order.GetAll());
     }
 
     [HttpGet("/vendors/{vendorId}/orders/new")]

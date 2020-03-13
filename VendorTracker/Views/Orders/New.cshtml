@@ -1,9 +1,5 @@
 <h1>ADD ORDER</h1>
 
-<p>test it out</p>
-
-<p>Here's a form, that should POST submit back to <a href="/vendors/@Model.Id">specific vendor</a></p>
-
 <form action="/vendors/@Model.Id/orders" method="post">
   <label for="orderBread">How much bread?</label>
   <input id="orderBread" name="orderBread" type="number">
@@ -13,3 +9,5 @@
   <input id="orderNotes" name="orderNotes" placeholder="none" type="text">
   <button type="submit">Add new order</button>
 </form>
+
+<p>Here's a static link back to <a href='/vendors/@Model.Id/'>orders list for this vendor</a></p>
