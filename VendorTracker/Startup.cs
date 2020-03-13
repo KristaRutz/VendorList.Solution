@@ -34,6 +34,8 @@ namespace VendorTracker
           template: "{controller=Home}/{action=Index}/{id?}");
       });
 
+      app.UseStaticFiles();
+
       app.Run(async (context) =>
       {
         await context.Response.WriteAsync("Congrats! You've encountered a bug.");
