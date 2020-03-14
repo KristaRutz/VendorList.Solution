@@ -2,7 +2,7 @@
   Layout = "_Layout";
 }
 
-<h1>ADD ORDER</h1>
+<h1>New Order</h1>
 
 <form action="/vendors/@Model.Id/orders" method="post">
   <label for="orderBread">How much bread?</label>
@@ -11,7 +11,7 @@
   <input id="orderPastries" name="orderPastries" type="number">
   <label for="orderNotes">Notes:</label>
   <input id="orderNotes" name="orderNotes" placeholder="none" type="text">
-  <button type="submit">Add new order</button>
+  <button class="btn btn-light" type="submit">Add new order</button>
 </form>
 
-<p>Here's a static link back to <a href='/vendors/@Model.Id/'>orders list for this vendor</a></p>
+<button class="btn btn-light"><a href='/vendors/@Model.Id/'>Back to Vendor Details</a></button>

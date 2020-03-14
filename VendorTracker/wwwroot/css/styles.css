@@ -1,0 +1,21 @@
+div#header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background: rgb(227, 227, 227);
+  padding: 12px;
+}
+
+div.container {
+  margin-top: 150px;
+}
+
+div#footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  background: rgb(227, 227, 227);
+  padding: 12px;
+}

@@ -6,10 +6,10 @@
 <hr>
 <h3>Vendor info:</h3>
 <p>Name: @Model["vendor"].Name</p>
-<p>Type: @Model["vendor"].Description</p>
+<p>Vendor Type: @Model["vendor"].Description</p>
 <hr>
 <h3>Order Details</h3>
-<p>@Model["order"].Description</p>
+<p>Contents: @Model["order"].Description</p>
 <p>Last updated: @Model["order"].DateModified</p>
 <p>Fill this order by: @Model["order"].DateDue</p>
 <p>Notes: @Model["order"].Notes</p>
@@ -20,4 +20,4 @@
 @* <form action='/vendors/@Model["vendor"].Id/orders/@Model["order"].Id/delete' method="post">
 <p>Here's a static link to <button type="submit" href='/vendors/@Model["vendor"].Id/orders/@Model["order"].Id/delete'>delete this order</button></p>
 </form> *@
-<p>Here's a static link back to <a href='/vendors/@Model["vendor"].Id/'>orders list for this vendor</a></p>
+<p><a href='/vendors/@Model["vendor"].Id/'>Back to Vendor Details</a></p>

@@ -6,10 +6,12 @@
     <link rel="stylesheet" type="text/css" href="~/css/styles.css" />
   </head>
   <body>
+    <div>
+      @Html.Partial("Header")
+    </div>
     <div class="container">
-      @* @Html.Partial("Header") *@
       @RenderBody()
-      @* @Html.Partial("Footer") *@
+      @Html.Partial("Footer")
     </div>
   </body>
 </html>
