@@ -6,7 +6,7 @@
 
 ## Description
 
-This application, utilizing an MVC framework, lets the user... and does... It does so using C# and .NET Core.
+This application, utilizing an MVC framework, lets the user, in this case a small bakery, keep track of vendors and their orders. Vendors can be added dynamically in a form, and orders for bread and pastries can be made under each vendor account. The app implements this with C# and .NET Core.
 
 This project uses RESTful routing, the Razor View Engine, and MSTest. It was created for the Epicodus week 10 friday independent project, on week 3 of C# and .NET course: Basic Web Applications.
 
@@ -52,7 +52,7 @@ Download or clone the repository to run this program locally! _This program requ
 
 ## Known Bugs
 
-- No known bugs
+- Delete option not yet functional
 
 ## Support and contact details
 
